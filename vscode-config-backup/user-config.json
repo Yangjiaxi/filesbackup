@@ -1,8 +1,8 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.fontSize": 15,
-    "terminal.integrated.fontSize": 20,
-    "editor.fontFamily": "Menlo",
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "editor.fontSize": 18,
+    "terminal.integrated.fontSize": 15,
+    "editor.fontFamily": "Meslo LG M DZ for Powerline",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -11,7 +11,6 @@
     "jupyter.appendResults": true,
     "code-runner.runInTerminal": true,
     "material-icon-theme.folders.theme": "specific",
-    "workbench.colorTheme": "Default High Contrast",
     "clang.cflags": [
         "-std=c11"
     ],
@@ -78,5 +77,8 @@
     "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
     "git.confirmSync": false,
     "clang-format.executable": "clang-format",
-    "workbench.startupEditor": "welcomePage"
+    "workbench.startupEditor": "welcomePage",
+    "editor.tabSize": 2,
+    "materialTheme.fixIconsRunning": false,
+    "workbench.colorTheme": "Monokai"
 }
