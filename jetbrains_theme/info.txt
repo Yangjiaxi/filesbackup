@@ -1,0 +1,2 @@
+Monokai's theme for jetbrains
+With plugin [Material Theme UI] from plugin repo
