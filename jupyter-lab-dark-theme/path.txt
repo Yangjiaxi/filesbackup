@@ -1,3 +1,0 @@
-~/Users/yang/miniconda3/share/jupyter/lab/themes/@jupyterlab/theme-dark-extension
-
-This index.css is modified for Monokai theme.

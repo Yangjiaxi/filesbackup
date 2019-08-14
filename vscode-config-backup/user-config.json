@@ -24,12 +24,11 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "markdown.preview.doubleClickToSwitchToEditor": false,
     "npm.packageManager": "yarn",
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "welcomePage",
     "cmake.debugConfig": {
         "stopAtEntry": false,
         "MIMode": "lldb",
-        "miDebuggerPath": "/Users/yang/.vscode/extensions/ms-vscode.cpptools-0.23.1/debugAdapters/lldb/bin/lldb-mi",
+        "miDebuggerPath": "/Users/yang/.vscode/extensions/ms-vscode.cpptools-0.24.1/debugAdapters/lldb/bin/lldb-mi",
         "logging": {
             "trace": false,
             "engineLogging": false,
@@ -73,6 +72,24 @@
     "terminal.integrated.shell.osx": "/bin/zsh",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "typescript.preferences.quoteStyle": "single",
-    "workbench.colorTheme": "Solarized Light",
-    "workbench.colorCustomizations": {},
+    "workbench.iconTheme": "material-icon-theme",
+    "rust-client.rustupPath": "/Users/yang/.cargo/bin/rustup",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "Class",
+                "scope": [
+                    "entity.name.scope-resolution",
+                    "keyword.control.class",
+                    "meta.class",
+                    "entity.name.class",
+                    "entity.name.type.class"
+                ],
+                "settings": {
+                    "fontStyle": "underline"
+                }
+            }
+        ]
+    },
+    "workbench.colorTheme": "Solarized Light"
 }
