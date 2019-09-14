@@ -1,30 +1,45 @@
 {
+    // ***************[Editor]***************
     // "editor.fontFamily": "FiraCode-Retina, Hei",
     // "editor.fontFamily": "Fira Code, Hei",
     // "editor.fontFamily": "Go Mono For Powerline, Hei",
     // "editor.fontFamily": "PT Mono, Hei",
     // "editor.fontFamily": "Roboto Mono for Powerline, Hei",
     "editor.fontFamily": "Ligalex Mono, Hei",
-    "terminal.integrated.fontFamily": "Ligalex Mono, Hack Nerd Font, Hei",
     "editor.fontSize": 16,
-    "terminal.integrated.fontSize": 16,
-    "editor.formatOnSave": true,
-    "material-icon-theme.folders.theme": "specific",
-    "window.zoomLevel": 1,
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Chromium, BreakBeforeBraces: Allman, IndentWidth: 4, ColumnLimit: 80}",
-    "cmake.cmakePath": "/Applications/CMake.app/Contents/bin/cmake",
-    "cmake.configureOnOpen": true,
-    "editor.fontLigatures": true,
     "editor.lineHeight": 21,
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": true,
     "editor.snippetSuggestions": "top",
+    "editor.minimap.renderCharacters": false,
+    "editor.wordWrap": "off",
+    "editor.renderControlCharacters": false,
+    "editor.minimap.enabled": true,
+    "editor.renderLineHighlight": "all",
+    "editor.cursorWidth": 2,
+    "editor.suggestSelection": "first",
+    // ***************[Terminal]***************
+    "terminal.integrated.fontFamily": "Ligalex Mono, Hack Nerd Font, Hei",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    // ***************[Global AUX]***************
+    "window.zoomLevel": 1,
     "explorer.confirmDelete": false,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 30000,
     "git.confirmSync": false,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "markdown.preview.doubleClickToSwitchToEditor": false,
-    "npm.packageManager": "yarn",
     "workbench.startupEditor": "welcomePage",
+    "explorer.confirmDragAndDrop": false,
+    "breadcrumbs.enabled": true,
+    // ***************[Theme]***************
+    "window.title": "${activeEditorShort}${separator}${folderPath}",
+    "material-icon-theme.folders.theme": "specific",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Solarized Light",
+    // ***************[C/C++]***************
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Chromium, BreakBeforeBraces: Allman, IndentWidth: 4, ColumnLimit: 80}",
+    "cmake.cmakePath": "/Applications/CMake.app/Contents/bin/cmake",
+    "cmake.configureOnOpen": true,
     "cmake.debugConfig": {
         "stopAtEntry": false,
         "MIMode": "lldb",
@@ -36,60 +51,43 @@
             "moduleLoad": false
         }
     },
-    "explorer.confirmDragAndDrop": false,
-    "editor.minimap.renderCharacters": false,
-    "window.title": "${activeEditorShort}${separator}${rootName} - ${appName}",
+    "C_Cpp.updateChannel": "Insiders",
+    // ***************[Python]***************
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
         "--line-length=80"
     ],
-    "breadcrumbs.enabled": true,
-    "latex-workshop.view.pdf.viewer": "tab",
-    "editor.wordWrap": "off",
-    "editor.renderControlCharacters": false,
-    "liveServer.settings.donotVerifyTags": true,
-    "editor.minimap.enabled": false,
-    "editor.renderLineHighlight": "all",
-    "editor.cursorWidth": 2,
-    "editor.suggestSelection": "first",
-    "C_Cpp.updateChannel": "Insiders",
     "python.linting.pep8Args": [
         "--ignore=E501"
     ],
     "python.pythonPath": "ipython",
-    "sync.gist": "230968a5d265d19e8d78f2ba4201e084",
     "python.jediEnabled": false,
+    // ***************[JavaScript]*************** 
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "java.configuration.checkProjectSettingsExclusions": false,
-    "[typescript]": {
-        "editor.tabSize": 2
-    },
     "[javascript]": {
         "editor.tabSize": 2,
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "javascript.preferences.quoteStyle": "single",
-    "terminal.integrated.shell.osx": "/bin/zsh",
+    // ***************[TypeScript]*************** 
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
     "typescript.updateImportsOnFileMove.enabled": "always",
     "typescript.preferences.quoteStyle": "single",
-    "workbench.iconTheme": "material-icon-theme",
+    // ***************[Rust]*************** 
+    "rust.clippy_preference": "on",
     "rust-client.rustupPath": "/Users/yang/.cargo/bin/rustup",
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "name": "Class",
-                "scope": [
-                    "entity.name.scope-resolution",
-                    "keyword.control.class",
-                    "meta.class",
-                    "entity.name.class",
-                    "entity.name.type.class"
-                ],
-                "settings": {
-                    "fontStyle": "underline"
-                }
-            }
-        ]
-    },
-    "workbench.colorTheme": "Solarized Light"
+    // ***************[Markdown]***************
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+    // ***************[LaTeX]***************
+    "latex-workshop.view.pdf.viewer": "tab",
+    // ***************[Plugins]***************
+    "liveServer.settings.donotShowInfoMsg": true,
+    "npm.packageManager": "yarn",
+    "liveServer.settings.donotVerifyTags": true,
+    "http.proxySupport": "off",
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.workspaceFolder": "/Users/yang/Desktop/Code/leetcode",
+    "leetcode.hint.configWebviewMarkdown": false
 }
