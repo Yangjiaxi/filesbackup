@@ -1,18 +1,13 @@
 {
     // ***************[Editor]***************
     // "editor.fontFamily": "FiraCode-Retina, Hei",
-    // "editor.fontFamily": "Fira Code, Hei",
     // "editor.fontFamily": "Go Mono For Powerline, Hei",
-    // "editor.fontFamily": "PT Mono, Hei",
-    // "editor.fontFamily": "Roboto Mono for Powerline, Hei",
     "editor.fontFamily": "Ligalex Mono, Hei",
-    // "editor.fontFamily": "'Fixedsys Excelsior 3.01', Hei",
-    // "editor.fontFamily": "Cascadia Code, Hei",
+    // "editor.fontFamily": "'Fixedsys Excelsior 3.01', Dotted Songti Square, Hack Nerd Font",
+    // "editor.fontFamily": "Cascadia Code, Hei, Hack Nerd Font",
     // "editor.fontFamily": "JetBrains Mono, Hei",
-    // "editor.fontFamily": "Hasklig, Hei",
-    // "editor.fontFamily": "Courier, Hei",
     // "editor.fontFamily": "PragmataPro, Hei",
-    // "editor.fontWeight": "500",
+    // "editor.fontWeight": "300",
     "editor.renderLineHighlight": "all",
     "editor.snippetSuggestions": "top",
     "editor.suggestSelection": "first",
@@ -20,20 +15,23 @@
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.wordWrap": "on",
-    "editor.fontSize": 16,
-    "editor.lineHeight": 22,
+    "editor.fontSize": 15,
+    "editor.lineHeight": 18,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "workbench.editor.scrollToSwitchTabs": true,
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
     // ***************[Terminal]***************
     // "terminal.integrated.fontFamily": "Cascadia Code, Hack Nerd Font, Hei",
-    "terminal.integrated.fontFamily": "Ligalex Mono, Hack Nerd Font, Hei",
-    // "terminal.integrated.fontFamily": "JetBrains Mono, Hack Nerd Font, Hei",
+    // "terminal.integrated.fontFamily": "Ligalex Mono, Hack Nerd Font, Hei",
+    "terminal.integrated.fontFamily": "JetBrains Mono, Hack Nerd Font, Hei",
     // "terminal.integrated.fontFamily": "PragmataPro, Hack Nerd Font, Hei",
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "terminal.integrated.rendererType": "dom",
     "terminal.integrated.inheritEnv": true,
-    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontSize": 15,
     // ***************[Global AUX]***************
     "files.associations": {
-        "*.y": "plaintext"
+        "*.y": "plaintext",
+        "*.sh": "bat"
     },
     "workbench.startupEditor": "welcomePage",
     "http.proxy": "http://127.0.0.1:7890",
@@ -43,23 +41,25 @@
     "files.autoSaveDelay": 30000,
     "http.proxySupport": "on",
     "git.confirmSync": false,
-    "window.zoomLevel": 0,
+    "debug.console.fontFamily": "Ligalex Mono, Hei",
+    "debug.console.fontSize": 14,
     // ***************[Theme]***************
     "window.title": "${activeEditorShort}${separator}${folderPath}",
     "material-icon-theme.folders.theme": "specific",
     "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Solarized Light",
     "workbench.colorCustomizations": {
         "editor.findMatchBorder": "#ff0000",
-        "editor.findMatchHighlightBorder": "#ff0000"
+        "editor.findMatchHighlightBorder": "#ffff00"
     },
     // ***************[C/C++]***************
-    "C_Cpp.clang_format_style": "{ IndentWidth: 4, ColumnLimit: 100, IndentCaseLabels: true, AlignAfterOpenBracket: AlwaysBreak,  BinPackArguments: false, BinPackParameters: false, AlignEscapedNewlines: Left, AllowShortLoopsOnASingleLine: true, AlignAfterOpenBracket: true}",
+    "C_Cpp.clang_format_style": "{ IndentWidth: 4, ColumnLimit: 100, IndentCaseLabels: true, AlignAfterOpenBracket: AlwaysBreak, AllowShortFunctionsOnASingleLine: false, BinPackArguments: false, BinPackParameters: false, AlignEscapedNewlines: Left, AllowShortLoopsOnASingleLine: true, AlignAfterOpenBracket: true}",
     "cmake.cmakePath": "/Applications/CMake.app/Contents/bin/cmake",
     "cmake.configureOnOpen": true,
     "cmake.debugConfig": {
         "stopAtEntry": false,
         "MIMode": "lldb",
-        "miDebuggerPath": "/Users/yang/.vscode/extensions/ms-vscode.cpptools-0.26.3-insiders3/debugAdapters/lldb/bin/lldb-mi",
+        "miDebuggerPath": "/Users/yang/.vscode/extensions/ms-vscode.cpptools-0.28.3/debugAdapters/lldb-mi/bin/lldb-mi",
         "logging": {
             "trace": false,
             "engineLogging": false,
@@ -69,11 +69,10 @@
     },
     "C_Cpp.updateChannel": "Insiders",
     // ***************[Python]***************
-    "python.formatting.provider": "autopep8",
+    "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
-        // "--line-length=80"
+        "--line-length=100"
     ],
-    "python.pythonPath": "ipython",
     // ***************[JavaScript]*************** 
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[javascript]": {
@@ -98,6 +97,11 @@
     },
     // ***************[LaTeX]***************
     "latex-workshop.view.pdf.viewer": "tab",
+    "wordcount_cjk.activateLanguages": [
+        "markdown",
+        "plaintext",
+        "latex"
+    ],
     // ***************[Plugins]***************
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
@@ -109,7 +113,13 @@
     "code-runner.executorMap": {
         "cpp": "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt.out && $dir$fileNameWithoutExt.out && rm $dir$fileNameWithoutExt.out"
     },
-    "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.colorTheme": "Solarized Light",
     "java.configuration.checkProjectSettingsExclusions": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "java.semanticHighlighting.enabled": false,
+    "window.zoomLevel": 0,
+    "terminal.integrated.rendererType": "dom",
+    "python.languageServer": "Microsoft",
+    "python.defaultInterpreterPath": "ipython",
 }

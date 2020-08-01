@@ -34,8 +34,15 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-scripts/phd'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+" Plugin 'nathanaelkane/vim-indent-guides'
+" let g:indent_guides_enable_on_vim_startup=1
+" 从第二层开始可视化显示缩进
+" let g:indent_guides_start_level=2
+" 色块宽度
+" let g:indent_guides_guide_size=1
 Plugin 'derekwyatt/vim-fswitch'
 Plugin 'kshenoy/vim-signature'
+" Plugin 'vim-scripts/BOOKMARKS—Mark-and-Highlight-Full-Lines'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/indexer.tar.gz'
 Plugin 'vim-scripts/DfrankUtil'
